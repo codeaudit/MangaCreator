@@ -1,0 +1,5 @@
+{
+  "name": "Copy of AI Manga Creator",
+  "description": "An application to automatically generate manga comics. Users can create panel layouts, upload character sheets, and provide a story to generate manga pages with the help of AI.",
+  "requestFramePermissions": []
+}
