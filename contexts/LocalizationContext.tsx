@@ -10,7 +10,7 @@ interface LocalizationContextType {
 export const LocalizationContext = createContext<LocalizationContextType | undefined>(undefined);
 
 export const LocalizationProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('ko');
+  const [language, setLanguage] = useState<Language>('en');
 
   const t = useCallback((key: LocaleKeys, replacements?: { [key: string]: string | number }): string => {
     let translation = locales[language][key] || locales['en'][key] || key;

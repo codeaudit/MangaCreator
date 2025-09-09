@@ -289,7 +289,7 @@ export const PanelEditor = forwardRef<
                     canRedo && onRedo();
                 }
           }
-          if (e.key === ' ' && !isSpacePressed.current && !editingShapeId && !posingCharacter) {
+          if (e.key === ' ' && !isSpacePressed.current && !editingShapeId && !posingCharacter && !(document.activeElement instanceof HTMLInputElement || document.activeElement instanceof HTMLTextAreaElement)) {
               isSpacePressed.current = true;
               e.preventDefault();
           }
